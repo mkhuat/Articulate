@@ -75,11 +75,10 @@
     				<div class="button_box2 form-group search" ng-class="{'has-error':articleForm.search.$touched && articleForm.search.$invalid}">
     					<div class="form-wrapper-2 cf">
     						<input id="search" name="search" placeholder="Enter your search.." ng-model="article" class="form-control" ng-minlength="2" required></input>
-                            <p ng-show="articleForm.search.$error.minlength" class="help-block">Search needs to be at least 2 characters long</p>
 
                             <!-- Submit button -->
     						<div class="form-group">
-                                <button ng-disabled="articleForm.search.$invalid" class="btn btn-primary btn-block" ng-click="getAuthor()" type="submit">Submit</button>
+                                <button class="btn btn-primary btn-block" ng-click="getAuthor()" type="submit">Submit</button>
                             </div>
     					</div>
     				</div>
