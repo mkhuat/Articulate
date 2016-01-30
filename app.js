@@ -1,11 +1,24 @@
-var input = "roycevanle";
-Algorithmia.client("imYgoCAhR1/U4SqX+rkaRHIJxv1");
+angular.module('CoolApp', [])
+  .controller('HomeController', function($scope, $http) {
+    $http({
+      method: 'GET',
+      url: 'http://api.diffbot.com/v3/article'
+    }).then(function successCallback(response) {
+        return "Success!";
+      }, function errorCallback(response) {
+        return "Error...";
+    });
 
-client.algo("algo://nlp/Summarizer/0.1.3")
+    var input = "roycevanle";
+    Algorithmia.client("imYgoCAhR1/U4SqX+rkaRHIJxv1");
+
+    client.algo("algo://nlp/Summarizer/0.1.3")
       .pipe(input)
       .then(function(output) {
         console.log(output);
       });
+  });
+
 /* //Create application
 var data;
 var baseUrl = 'https://api.spotify.com/v1/search?type=track&query='
