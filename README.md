@@ -12,9 +12,13 @@ frequently througout the text, a general summary of the article, and then the ar
 
 ##Contributors 
 Melissa Khuat
+
 Cindy Nguyen
+
 Royce Le
+
 Khulan Bsn
+
 Leah Dao
 
 ##License
