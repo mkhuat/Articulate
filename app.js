@@ -9,7 +9,9 @@ var myCtrl = myApp.controller('myCtrl', function($scope, $http) {
   $scope.getAuthor = function () {
     $http.get(baseurl + $scope.article).success(function(response){
       data = $scope.article = response.objects
-      console.log(data);
+      $scope.articleObject = data[0];
+      
+      console.log($scope.articleObject);
     })
   }
 })
