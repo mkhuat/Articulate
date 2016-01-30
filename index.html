@@ -24,7 +24,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+	<link rel="stylesheet" href="index.css" type="text/css">
 
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	
 </head>
 
 <body ng-app="CoolApp" id="page-top">
@@ -67,17 +70,17 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Analyze Text</h1>
-                <hr>
-                <p>Enter the URL of any article webpage for summary statistics</p>
-				<div class="form-wrapper cf">
-					<input type="text" id="url">
-					<button id="query">Search</button>
+                <h1>Analyze Text</h1><br>
+                <p>Enter the URL of an article for summary statistics</p>
+				<div class="button_box2">
+					<div class="form-wrapper-2 cf">
+						<input type="text" placeholder="Search here..." required>
+						<button type="submit">Search</button>
+					</div>
 				</div>
             </div>
         </div>
     </header>
-
 	
     <section class="bg-primary" id="analysis">
         <div class="container">
@@ -90,7 +93,7 @@
         </div>
     </section>
 
-	</section id="summary">
+	<section id="summary">
         <div class="container">
             <div class="row">
 				<div class="col-lg-8 col-lg-offset-2 text-center">
@@ -200,7 +203,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 	
-    <!-- angular -->
+    <!-- Angular -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <!-- Javascript -->
