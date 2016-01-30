@@ -4,7 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-#url {
+#sum {
+	padding-top: 50px;
+}
+ 
+#url, #query {
 	color: black;
 }
  
