@@ -8,11 +8,16 @@ frequently througout the text, a general summary of the article, and then the ar
 
 ##API Reference
 Algorithmia: Summarize
+
 DIFFBOT: Article Analyzer
 
 ##Contributors 
 Melissa Khuat
+
 Cindy Nguyen
+
 Royce Le
+
 Khulan Bsn
+
 Leah Dao
