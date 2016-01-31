@@ -13,11 +13,14 @@ var myCtrl = myApp.controller('myCtrl', function($scope, $http) {
 
 		var client = Algorithmia.client('sim9B6nzyVHR3LuYtjDwWyFmqOz1');
   		var input = data[0].text;
-  		//$scope.articleObject.summarizer = '';
+  		id="article"
+  		document.getElementById("article").style.display = "";
+	       		
   		client.algo("algo://nlp/Summarizer/0.1.3")
 	       .pipe(input)
 	       .then(function(output) {
 	       		var sumtext = document.getElementById("summtext");
+	       		document.getElementById("summary").style.display = "";
 	       		sumtext.innerHTML = output.result;
 	       		console.log(output.result);
 	       		//console.log($scope.articleObject.summarizer);
