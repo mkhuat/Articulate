@@ -8,9 +8,20 @@ var myCtrl = myApp.controller('myCtrl', function($scope, $http) {
   //To get article author
   $scope.getAuthor = function () {
     $http.get(baseurl + $scope.article).success(function(response){
-	data = response.objects //$scope.article
-	$scope.articleObject = data[0];
-	console.log(data);
+		data = response.objects //$scope.article
+		$scope.articleObject = data[0];
+
+		var client = Algorithmia.client('sim9B6nzyVHR3LuYtjDwWyFmqOz1');
+  		var input = data[0].text;
+  		//$scope.articleObject.summarizer = '';
+  		client.algo("algo://nlp/Summarizer/0.1.3")
+	       .pipe(input)
+	       .then(function(output) {
+	       		var sumtext = document.getElementById("summtext");
+	       		sumtext.innerHTML = output.result;
+	       		console.log(output.result);
+	       		//console.log($scope.articleObject.summarizer);
+           });
     })
   }
 })

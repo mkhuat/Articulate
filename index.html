@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
 					<h1 class="section-heading">Analysis</h1>
-                    <p>{{articleObject.author}}</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -103,7 +103,9 @@
             <div class="row">
 				<div class="col-lg-8 col-lg-offset-2 text-center">
 					<h1 class="section-heading"id="sum">Summary</h1>
-					<p>More random shit</p>
+                    <h2>{{articleObject.title}}</h2>
+                    <h3>{{articleObject.author}}</h3>
+					<p id="summtext"></p>
 				</div>
 			</div>
 		</div>
@@ -213,6 +215,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
         <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
+
+    <!-- Algorithmia -->
+    <script src="js/algorithmia-0.2.0.js"></script>
 
     <!-- Javascript -->
     <script src="app.js"></script>
