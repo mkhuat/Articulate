@@ -115,3 +115,9 @@
 img {
 margin-right: 10px;
 }
+
+#putURL {
+    display:block;
+    width:50%;
+    margin:0 auto;
+}
